@@ -9,14 +9,14 @@ int main(void)
     int current_size = 0;
     int year_count = 0;
 
-    // ask the start size of Llamas from user
+    // ask user for the start size of Llamas
     do
     {
         start_size = get_int("Start size: ");
     }
     while (start_size < 9);
 
-    // ask the end size of Llamas from user
+    // ask user for the end size of Llamas
     do
     {
         end_size = get_int("End size: ");
@@ -27,7 +27,7 @@ int main(void)
     current_size = start_size;
 
     // calculate year count
-    while (current_size < end_size) 
+    while (current_size < end_size)
     {
         current_size = current_size + current_size / 3 - current_size / 4;
         year_count++;
